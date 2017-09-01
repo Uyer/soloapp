@@ -26,7 +26,11 @@
             <span class="icon-bar"></span>
           </button> 
           <div class="projectName navbar-brand">
-            <span>Brln</span>
+            <span>Brln_Bikes</span>
+            <div class="social-icons">
+              <span><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></span>
+              <span><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></span>
+            </div>
           </div> <!-- / projectName --> 
         </div> <!-- / navbar header -->
         <div class="navbar-collapse collapse">
@@ -42,10 +46,12 @@
     
     <%= yield %>
 
-    <footer>
-      <div class= "copyright">
-        <p>&copy; 2017 BBikes</p>
-      </div>
+    <footer class= "navbar navbar-inverse navbar-fixed-bottom">
+      <div class="container-fluid">
+        <div class= "copyright">
+          <p>&copy; 2017 BBikes</p>
+        </div>
+      </div>  
     </footer>  
   </body>
 </html>

@@ -6,31 +6,51 @@ body{
   padding-top: 29px;
   width: 100%;
   height: 100%;
-  font-family: 'Baloo Bhaijaan', Futura, cursive;
+  font-family: Futura, cursive;
+  padding-bottom: 50px;
+}
+
+.projectName, a {
+  color:#fff !important;
+}
+
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 h1 {
   position: absolute;
-  color: #fff;
-  background-color: rgba(128, 126, 126, 0.21);
+  background-color: rgba(128, 126, 126, 0.5);
   padding: 20px;
+  color: #fff;
+  text-align: center;
 }
 
-h2 {
-  font-weight: 800;
-  background-color: rgba( 255, 255, 255, 0.3);
+.info {
+  padding: 2%;
+  padding-left: 3%;
+  background-color: lightyellow;
+}
+
+.info h2 {
+  font-weight: 600;
 }
 
 .navbar {
   font-size: 1.2em;
-  font-family: Futura, cursive;
 }
 
+.social-icons {
+  display: inline;
+  letter-spacing: 2px;
+  padding-left: 4px;
+}
+
+
+
 footer {
-    width: 100%;
     text-align: center;
-    background-color: rgb(64, 20, 20);
-    height: 80px;
     color: #fff;
 }
 
