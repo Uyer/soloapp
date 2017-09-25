@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body{
-  padding-top: 5px;
+  padding-top: 20px;
   width: 100%;
   height: 100%;
   font-family: Futura, cursive;
@@ -39,6 +39,12 @@ h1 {
   font-size: 1.2em;
 }
 
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  
+}
+
 .social-icons {
   display: inline;
   letter-spacing: 2px;
@@ -56,5 +62,5 @@ footer {
 }
 
 footer p {
-  padding-top: 30px;
+  padding-top: 15px;
 }
