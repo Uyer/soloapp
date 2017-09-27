@@ -3,26 +3,12 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body{
-  padding-top: 20px;
+  padding-top: 35px;
   width: 100%;
   height: 100%;
   font-family: Futura, cursive;
   padding-bottom: 50px;
   background-color: lightyellow;
-}
-
-.projectName {
-  color:#fff !important;
-}
-
-.nopadding {
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-h1 {
-  padding: 20px;
-  text-align: center;
 }
 
 .info {
@@ -35,6 +21,8 @@ h1 {
   font-weight: 600;
 }
 
+/*//Navbar//*/
+
 .navbar {
   font-size: 1.2em;
 }
@@ -43,6 +31,15 @@ h1 {
   color: #fff;
   text-decoration: none;
   
+}
+
+.projectName {
+  color:#fff !important;
+}
+
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .social-icons {
@@ -55,6 +52,8 @@ h1 {
   color: #fff;
 }
 
+/*//Footer//*/
+
 
 footer {
     text-align: center;
@@ -63,4 +62,52 @@ footer {
 
 footer p {
   padding-top: 15px;
+}
+
+/*//Carousel//*/
+
+#carousel-example-generic {
+    margin-top: 30px;
+    background-color: #fff;
+}
+
+.carousel-caption {
+  color: #000;
+  text-transform: uppercase;
+	right: 10%;
+	left: 55%;
+	top: 2%;
+  text-shadow: none;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.15);
+  display: inline-block;
+  height: 40%; 
+}
+
+.carousel-inner img {
+  margin: auto;
+}
+
+.carousel-control {
+  background-image: none !important;
+  text-shadow: none;
+  opacity: 100;
+  color: #000;
+}
+
+.carousel-indicators {
+  bottom: -60px;
+}
+
+.carousel-indicators > li {
+	border: 0;
+	border-radius: 0;
+	background-color: #999;
+	width: 12px;
+	height: 12px;
+	margin: 0;
+}
+
+.carousel-indicators > .active {
+	background-color: #000;
 }
