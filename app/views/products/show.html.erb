@@ -1,4 +1,38 @@
-<p id="notice"><%= notice %></p>
+<%= link_to 'Back', products_path %>
+
+<div class = "container-fluid">
+  <div class = "row">
+  <div class = "prod_wrapper">
+    <div class = "col-xs-12 col-sm-6 nopadding">
+        <div class = "product_img">
+          <%= image_tag(@product.image_url, class: "img-responsive") %>
+        </div>  
+      </div>    
+      <div "col-xs-12 col-sm-6 nopadding">
+        <div class = "product_info">
+            <h2><%= @product.name %></h2> 
+          <div class = "product_desc">
+            <p><%= @product.description %></p>
+          </div>
+          <div class = "product_color">
+              
+          </div>
+          <div class = "product_price">
+          <p>Price: </br><strong><%= @product.price %></strong></p>
+          </div>
+        </div>  
+      </div>
+  </div>    
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- <p id="notice"><%= notice %></p>
 
 <p>
   <strong>Name:</strong>
@@ -25,5 +59,4 @@
   <%= @product.price %>
 </p>  
 
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+<%= link_to 'Edit', edit_product_path(@product) %> | -->

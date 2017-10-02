@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body{
+body {
   padding-top: 35px;
   width: 100%;
   height: 100%;
@@ -12,13 +12,18 @@ body{
 }
 
 .info {
-  padding: 2%;
-  padding-left: 3%;
-  background-color: lightyellow;
+  background-color: #999;
+  padding: 50px 0px;
+  width: 100%;
 }
 
-.info h2 {
-  font-weight: 600;
+.info_text {
+ margin-left: auto;
+ margin-right: auto;
+ width: 60%;
+ font-weight: 300;
+ position: relative;
+ text-align: center;
 }
 
 /*//Navbar//*/
@@ -58,12 +63,11 @@ body{
 footer {
     text-align: center;
     color: #fff;
+  
+  p {
+    padding-top: 15px;
+  }
 }
-
-footer p {
-  padding-top: 15px;
-}
-
 /*//Carousel//*/
 
 #carousel-example-generic {
@@ -112,20 +116,43 @@ footer p {
 	background-color: #000;
 }
 
+/*/Product Page /*/
+.prod_wrapper{
+  background-color: #fff;
+}
+.product_info {
+  height: 377px;
+  padding-left: 40px;
+  padding-top: 5%;
+  
+}
 
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
 
 @media screen and (max-width: 420px), screen and (max-device-width: 420px) {
-
-  .carousel-inner > .item > a > img {
-    width: 100%;
+  
+    .carousel-inner > .item > a > img {
+      width: 100%;
+    }
+  
+    .carousel-caption {
+      background-color: rgba(0, 0, 0, 0.30);
+      color: #fff;
+      height: 100%;
+      text-align: center;
+      right: 0;
+      left: 0;
+    }
+    .product_info {
+      text-align: center;
+    }
   }
-
-  .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.30);
-    color: #fff;
-    height: 100%;
-    text-align: center;
-    right: 0;
-    left: 0;
+  @media screen and (max-width: 768px), screen and (max-device-width: 768px){
+    
+      .product_info {
+        clear: both;
+      }
   }
-}
