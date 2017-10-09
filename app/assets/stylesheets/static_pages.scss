@@ -57,6 +57,23 @@ body {
   color: #fff;
 }
 
+.search_bar {
+  form > label {
+    display: none;
+  }
+
+  #q {
+    padding: 2px 0 3px 5px;
+  }
+
+  input {
+   border-width: 0;
+   background-color: #fff;
+  }
+
+  padding-top: 3px;
+}
+
 /*//Footer//*/
 
 
@@ -117,6 +134,7 @@ footer {
 }
 
 /*/Product Page /*/
+
 .prod_wrapper{
   background-color: #fff;
 }
@@ -132,6 +150,14 @@ footer {
   margin: 0 !important;
 }
 
+/*/Form Resource Styling /*/
+
+.form_wrapper{
+  padding: 0 20% 0 5%;
+}
+
+
+/*/ Media Querys /*/
 @media screen and (max-width: 420px), screen and (max-device-width: 420px) {
   
     .carousel-inner > .item > a > img {

@@ -10,33 +10,34 @@
       </ul>
     </div>
   <% end %>
+  <div class = "form_wrapper">
+    <div class="form-group">
+      <%= form.label :name %>
+      <%= form.text_field :name, id: :product_name, class: "form-control", placeholder: "Enter Product Name" %>
+    </div>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name, id: :product_name %>
-  </div>
+    <div class="form-group">
+      <%= form.label :description %>
+      <%= form.text_area :description, id: :product_description, class: "form-control", placeholder: "Enter Product Description" %>
+    </div>
 
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description, id: :product_description %>
-  </div>
+    <div class="form-group">
+      <%= form.label :image_url %>
+      <%= form.text_field :image_url, id: :product_image_url, class: "form-control", placeholder: "Enter Image URL" %>
+    </div>
 
-  <div class="field">
-    <%= form.label :image_url %>
-    <%= form.text_field :image_url, id: :product_image_url %>
-  </div>
+    <div class="form-group">
+      <%= form.label :colour %>
+      <%= form.text_field :colour, class: "form-control", placeholder: "Enter Product Colour" %>
+    </div>
 
-  <div class="field">
-    <%= form.label :colour %>
-    <%= form.text_field :colour %>
-  </div>
-
-  <div class="field">
-    <%= form.label :price %>
-    <%= form.text_field :price %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+    <div class="form-group">
+      <%= form.label :price %>
+      <%= form.text_field :price, class: "form-control", placeholder: "Enter Product Price" %>
+    </div>
+    <br>
+    <div class="actions">
+      <%= form.submit class: "btn btn-default"  %>
+    </div>
+  </div>  
 <% end %>

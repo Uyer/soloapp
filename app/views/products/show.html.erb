@@ -15,15 +15,16 @@
             <p><%= @product.description %></p>
           </div>
           <div class = "product_color">
-              
+             <p><%= @product.colour %></p>
           </div>
           <div class = "product_price">
           <p>Price: </br><strong><%= @product.price %></strong></p>
           </div>
         </div>  
       </div>
-  </div>    
+   </div>    
   </div>
+  <%= link_to 'Back', products_path %>
 </div>
 
 
