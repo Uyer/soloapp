@@ -1,0 +1,73 @@
+/*//Carousel//*/
+
+#carousel-example-generic {
+  margin-top: 30px;
+  background-color: #fff;
+}
+
+.carousel-caption {
+color: #000;
+text-transform: uppercase;
+right: 10%;
+left: 55%;
+top: 2%;
+text-shadow: none;
+text-align: center;
+background-color: rgba(0, 0, 0, 0.15);
+display: inline-block;
+height: 40%; 
+}
+
+.carousel-inner img {
+margin: auto;
+}
+
+.carousel-control {
+background-image: none !important;
+text-shadow: none;
+opacity: 100;
+color: #000;
+}
+
+.carousel-indicators {
+bottom: -60px;
+}
+
+.carousel-indicators > li {
+border: 0;
+border-radius: 0;
+background-color: #999;
+width: 12px;
+height: 12px;
+margin: 0;
+}
+
+.carousel-indicators > .active {
+background-color: #000;
+}
+
+/*/ Media Querys /*/
+@media screen and (max-width: 420px), screen and (max-device-width: 420px) {
+  
+    .carousel-inner > .item > a > img {
+      width: 100%;
+    }
+  
+    .carousel-caption {
+      background-color: rgba(0, 0, 0, 0.30);
+      color: #fff;
+      height: 100%;
+      text-align: center;
+      right: 0;
+      left: 0;
+    }
+    .product_info {
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: 768px), screen and (max-device-width: 768px){
+    
+      .product_info {
+        clear: both;
+      }
+  }  

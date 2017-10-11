@@ -1,11 +1,25 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-xs-12 nopadding">
-      <h1>Get in touch!</h1>
-      <%= image_tag("bbikes_3.jpg", class: "img-responsive my-image") %>
-      <div class="info">
-        <h2>Feel free to contact us for any enquiry you have.</h2>
+
+<h1>Contact Us</h1>
+<div class = "contact-wrapper">
+  <%= flash[:notice] %>
+
+  <%= form_with(url:"/static_pages/thank_you") do |form| %>
+    <div class = "row">
+      <div class = "col-md-4">
+        <div class = "form-group">
+          <%= form.label :name %>
+          <%= form.text_field :name, class: "form-control", placeholder: "Enter Name" %>
+        </div>
+        <div class = "form-group">
+          <%= form.label :email, "Email Address"%>
+          <%= form.text_field :email, class: "form-control", placeholder: "Enter Email" %>
+          </div>
+        <div class = "form-group">
+          <%= form.label :message %>
+          <%= form.text_area :message, class: "form-control", placeholder: "Enter Message" %>
+        </div>
       </div>
     </div>
-  </div>
+    <%= form.submit "Send", class: "btn btn-default" %>
+  <% end %>
 </div>

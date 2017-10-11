@@ -1,0 +1,68 @@
+.navbar {
+  font-size: 1.2em;
+
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    
+  }
+
+    a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  a:hover {
+    color: #fff;
+  }
+
+  .projectName {
+    color:#fff !important;
+  }
+
+  .nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .social-icons {
+    display: inline;
+    letter-spacing: 2px;
+    padding-left: 4px;
+  }
+
+  .social-icons a {
+    color: #fff;
+  }
+
+  .search_bar {
+    form > label {
+      display: none;
+    }
+
+    .form-control {
+      display: inline-block;
+    }
+
+    #q {
+      padding: 3px 0 3px 5px;
+      height: 28px;
+      width: 150px;
+    }
+
+    input {
+    border-width: 0;
+    background-color: #fff;
+    }
+
+    padding-top: 3px;
+
+    .search_btn {
+      height: 28px;
+      font-size: 12px;
+        input {
+          padding-right: 3px;
+        }
+    }
+  }
+}  

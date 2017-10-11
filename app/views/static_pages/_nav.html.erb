@@ -22,13 +22,13 @@
             <li><%= link_to "About", static_pages_about_path %></li>
             <li><%= link_to "Contact", static_pages_contact_path %></li>
           </ul>
-          <div class = "navbar-form navbar-right search_bar">
+          <div class = "navbar-form navbar-right search_bar form-inline">
             <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
             <%= form.label :q, 'Search for:' %>
-            <%= form.text_field :q, id: 'q', value: params[:q] %>
-            <%= form.submit 'Search' %>
+            <%= form.text_field :q, id: 'q', value: params[:q], class: "form-control" %>
+            <%= form.submit 'Search', class: "btn btn-default search_btn" %>
             <% end %>
           </div>
-        </div><!-- / navbar-collapse -->
-      </div><!-- / container-fluid -->
-    </nav><!-- / navbar -->
+        </div>
+      </div>
+    </nav>
