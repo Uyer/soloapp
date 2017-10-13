@@ -1,18 +1,18 @@
-
 <h1>Contact Us</h1>
 <div class = "contact-wrapper">
   <%= flash[:notice] %>
 
   <%= form_tag("/static_pages/thank_you") do %>
-      <div class="form-group">
-        <%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name", :required => true %>
-      </div>      
-      <div class="form-group">
-        <%= email_field_tag :email, nil, class: "form-control", placeholder: "Enter Email", :required => true %>
-      </div>
-      <div class="form-group">
-        <%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message", :required => true %>
-      </div>      
-  <%= submit_tag "Send", class: "btn btn-default send-button" %>   
-  <% end %>
-</div>
+    <div class="form-group">
+  <%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name", :required => true %>
+    </div>      
+  <div class="form-group">
+  <%= email_field_tag :email, nil, class: "form-control", placeholder: "Enter Email", :required => true %>
+  </div>
+  <div class="form-group">
+    <%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message", :required => true %>
+  </div>      
+    <%= submit_tag "Send", class: "btn btn-default send-button" %>   
+    <% end %>
+  </div>
+</div> 

@@ -47,3 +47,16 @@ body {
   padding: 0 !important;
   margin: 0 !important;
 }
+
+
+.alert, .notice {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  color: red;
+  display: inline;
+}
+
+.form_wrapper {
+  padding: 1% 20% 0 5%;
+}

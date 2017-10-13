@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  
+  devise_scope :user do
+    get 'login', to: 'devise/sessions#new'
+    get 'register', to: 'devise/registrations#new', as: "new_user_registration"
+    delete 'logout', to: 'devise/sessions#destroy'
+  end
+
+  devise_for :users
+
+  resources :users
   resources :products
   
   resources :orders, only: [:index, :show, :create, :destroy]
