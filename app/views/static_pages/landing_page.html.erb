@@ -43,8 +43,12 @@
           <div class="info_text">
             <h2>The best bikes in Berlin!</h2>
             <p>Check our awesome collection of used bikes.</p>
+            <% if notice%>
             <span class="notice"><%= notice %></span>
+            <% end %>
+            <% if alert %>
             <span class="alert"><%= alert %></span>
+            <% end %>
         </div>
       </div>  
     </div>  
