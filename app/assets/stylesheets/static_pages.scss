@@ -50,11 +50,9 @@ body {
 
 
 .alert, .notice {
-  text-align: center;
-  padding: 3px;
-  margin: 0;
-  color: #223072;
-  display: inline;
+display: block;
+padding-top: 30px;
+margin-bottom: 0;
 }
 
 .form_wrapper {

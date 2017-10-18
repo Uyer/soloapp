@@ -1,3 +1,4 @@
+<div class = "form_wrapper">
 <%= form_with(model: user, local: true) do |form| %>
   <% if user.errors.any? %>
     <div id="error_explanation">
@@ -11,17 +12,18 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :first_name %>
-    <%= form.text_field :first_name, id: :user_first_name %>
+    <%= form.text_field :first_name, id: :user_first_name, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :last_name %>
-    <%= form.text_field :last_name, id: :user_last_name %>
+    <%= form.text_field :last_name, id: :user_last_name, class: "form-control" %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Update User", class: "btn btn-default send-button" %>
   </div>
 <% end %>
+</div>
