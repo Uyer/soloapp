@@ -62,3 +62,13 @@ margin-bottom: 0;
 #user_title {
   padding-left: 0px;
 }
+
+@media screen and (max-width: 420px), screen and (max-device-width: 420px){
+  
+  .product-reviews #reviews {
+    margin: auto;
+    width: 50%;    
+
+  }
+
+}

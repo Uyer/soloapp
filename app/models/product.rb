@@ -20,4 +20,8 @@ has_many :comments, dependent: :destroy
 		comments.rating_asc.first
 	end
 
+  def average_rating
+    comments.average(:rating).to_f
+  end
+
 end
