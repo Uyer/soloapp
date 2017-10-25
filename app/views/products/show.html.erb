@@ -8,7 +8,7 @@
           <%= image_tag(@product.image_url, class: "img-responsive") %>
         </div>  
       </div>    
-      <div "col-xs-12 col-sm-6 nopadding">
+      <div class = "col-xs-12 col-sm-6 nopadding">
         <div class = "product_info">
             <h2><%= @product.name %></h2> 
           <div class = "product_desc">
@@ -25,8 +25,10 @@
         </div>  
       </div>
     </div>
+    <div class = "col-xs-12 col-sm-6">
     <%= render 'new_comment' %> 
     <%= render 'comments' %>   
+    </div>
   </div>
 </div>
 
