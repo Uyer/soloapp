@@ -2,8 +2,8 @@
 
 <div class = "container-fluid">
   <div class = "row">
-  <div class = "prod_wrapper">
-    <div class = "col-xs-12 col-sm-6 nopadding">
+    <div class = "prod_wrapper">
+      <div class = "col-xs-12 col-sm-6 nopadding">
         <div class = "product_img">
           <%= image_tag(@product.image_url, class: "img-responsive") %>
         </div>  
@@ -25,9 +25,11 @@
         </div>  
       </div>
     </div>
-    <div class = "col-xs-12 col-sm-6">
-    <%= render 'new_comment' %> 
+    <div class = "col-xs-12 col-sm-6 nopadding">
     <%= render 'comments' %>   
+    </div>
+    <div class = "col-xs-12 col-sm-6 nopadding">
+    <%= render 'new_comment' %> 
     </div>
   </div>
 </div>
