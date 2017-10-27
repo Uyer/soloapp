@@ -1,6 +1,7 @@
 class Product < ApplicationRecord
 has_many :orders
 has_many :comments, dependent: :destroy
+validates :name, presence: true
 
   def self.search(search_term)
     if Rails.env.production?

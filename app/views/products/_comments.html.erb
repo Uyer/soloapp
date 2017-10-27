@@ -1,8 +1,11 @@
 <div class="product-reviews">
     <% @comments.each do |comment| %>
-              <hr>
-              <p><%= comment.user.first_name %> <small><em><%= "#{time_ago_in_words(comment.created_at)} ago" %></em></small></p>
-              <p class="rated" data-score="<%= comment.rating %>"></p>
-              <p><%= comment.body %></p>   
+        <hr>
+        <p><%= comment.user.first_name %> <small><em><%= "#{time_ago_in_words(comment.created_at)} ago" %></em></small></p>
+        <p class="rated" data-score="<%= comment.rating %>"></p>
+        <p><%= comment.body %></p>
     <% end %>
+    <div class ="pagination">
+    <p><%= will_paginate @comments %></p>
+    </div>
 </div>
