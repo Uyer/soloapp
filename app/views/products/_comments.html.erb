@@ -10,6 +10,6 @@
         <p><%= comment.body %></p>
     <% end %>
     <div class ="pagination">
-    <p><%= will_paginate @comments %></p>
+    <p> <%= will_paginate @comments, class: "apple_pagination" %></p>
     </div>
 </div>
