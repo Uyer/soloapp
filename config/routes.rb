@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   resources :users 
   
   resources :orders, only: [:index, :show, :create, :destroy]
-  
+  # get 'foobar/:id/:xyz' => "products#show" routing example params
   get 'static_pages/about'
   get 'static_pages/contact'
   get 'static_pages/landing_page'
