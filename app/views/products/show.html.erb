@@ -20,7 +20,7 @@
           <p>Average Rating: <div class="rated" data-score="
           <%= @product.average_rating %>"></div></p>
           <div class = "product_price">
-          <p>Price: </br><strong><%= (@product.price / 100) %></strong></p>
+          <p>Price: </br><strong><%= (@product.price) %></strong></p>
           </div>
           <div class ="product_buy">
             <% if signed_in? %>
