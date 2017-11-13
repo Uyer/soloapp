@@ -38,11 +38,13 @@ gem 'cancancan', '~> 2.0'
 gem 'will_paginate', '~> 3.1.1'
 #Use Functional test gem
 gem 'rails-controller-testing'
+#Use Stripe payments
+gem 'stripe'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails', '~> 3.6'
-  # Use Factory Girl
+  # Use Factory Bot
 gem "factory_bot_rails"
 end
 

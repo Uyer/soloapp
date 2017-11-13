@@ -22,6 +22,11 @@
           <div class = "product_price">
           <p>Price $: </br><strong><%= @product.price %></strong></p>
           </div>
+          <div class ="product_buy">
+            <%= form_with(url: '/payments/create') do |form| %>
+            <%= render partial: "shared/stripe_checkout_button", locals: {product: @product} %>
+            <% end %>
+          </div>
         </div>  
       </div>
     </div>
