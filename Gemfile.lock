@@ -41,6 +41,7 @@ GEM
     arel (8.0.0)
     bcrypt (3.1.11)
     bindex (0.5.0)
+    brakeman (4.0.1)
     builder (3.2.3)
     byebug (9.1.0)
     cancancan (2.0.0)
@@ -208,6 +209,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  brakeman
   byebug
   cancancan (~> 2.0)
   coffee-rails (~> 4.2)

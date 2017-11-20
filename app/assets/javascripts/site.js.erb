@@ -3,7 +3,6 @@ $(document).on("turbolinks:load", function() {
 //Fade Out Alerts
 $(".alert").delay(700).fadeOut(900);
 
-
 //Raty plug in stars
  	$(".rating").raty({
  		starHalf: "<%= asset_path 'star-half.png' %>",
@@ -21,5 +20,8 @@ $(".alert").delay(700).fadeOut(900);
        return $(this).attr('data-score');
      }
    });
-
+ 
+ //elevateZoom plug in
+$(".img-zoom").elevateZoom({easing : true, 
+zoomWindowWidth:300, zoomWindowHeight:200});
 });
