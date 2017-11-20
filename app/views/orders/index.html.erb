@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Orders</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Order Number &nbsp;&nbsp; </th>
+      <th>User Email  &nbsp;&nbsp; </th>
+      <th>Product  &nbsp;&nbsp; </th>
+      <th>Total</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @orders.each do |order| %>
+      <tr>
+        <td><%= order.id %></td>
+        <td><%= order.user.email %></td>
+        <td><%= order.product.name %></td>
+        <td><%= order.total %></td>
+        
+      </tr>
+    <% end %>
+  </tbody>
+</table>
