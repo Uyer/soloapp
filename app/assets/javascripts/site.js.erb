@@ -1,9 +1,5 @@
-$(document).on("turbolinks:load", function() {
-
-//Fade Out Alerts
-$(".alert").delay(700).fadeOut(900);
-
-//Raty plug in stars
+var refreshRating = function() {
+  //Raty plug in stars
  	$(".rating").raty({
  		starHalf: "<%= asset_path 'star-half.png' %>",
  		starOff: "<%= asset_path 'star-off.png' %>",
@@ -20,6 +16,15 @@ $(".alert").delay(700).fadeOut(900);
        return $(this).attr('data-score');
      }
    });
+};
+
+
+$(document).on("turbolinks:load ajaxSuccess", function() {
+// Call Raty
+refreshRating();
+
+//Fade Out Alerts
+$(".alert").delay(700).fadeOut(900);
  
  //elevateZoom plug in
 $(".img-zoom").elevateZoom({easing : true, 
