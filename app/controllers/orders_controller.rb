@@ -1,20 +1,14 @@
 class OrdersController < ApplicationController
   before_action :authenticate_user!
   def index
-    @user = current_user
-    if user_signed_in? && @user.admin?
-    @orders = Order.all
-    elsif user_signed_in?
-      @orders = @user.orders
-    else
-      redirect_to main_app.root_url, alert: "You are not logged in"
-    end
+    @orders = Order.where(user_id: current_user)
   end
 
   def show
   end
 
   def new
+    @order = Order.new
   end
 
   def create
@@ -22,5 +16,12 @@ class OrdersController < ApplicationController
 
   def destroy
   end
+
+  private
+  
+     def order_params
+       params.require(:order).permit( :total, :user_id, :product_ids => [])
+     end
+  
 
 end
