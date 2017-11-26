@@ -1,5 +1,6 @@
 <div class="col-xs-12 col-sm-4">
   <div id=prod>
+  <% cache product do %>
     <%= link_to image_tag(product.image_url, class: "img-responsive"), product %>
     <div class=prod_desc>
       <a href="#"><h2><%= link_to product.name, product %></h2></a>
@@ -13,6 +14,7 @@
       <%= link_to 'Edit', edit_product_path(product) %> |
       <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %> |
       <%= link_to 'Add Product', new_product_path %>
+      <% end %>
       <% end %>
     </h6>
 </div><!-- /col -->

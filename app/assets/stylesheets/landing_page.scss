@@ -1,5 +1,8 @@
 /*//Carousel//*/
 
+#carousel {
+  padding: 0px;
+}
 #carousel-example-generic {
   margin-top: 30px;
   background-color: #fff;
@@ -44,6 +47,10 @@ margin: 0;
 
 .carousel-indicators > .active {
 background-color: #000;
+}
+
+.info {
+  padding: 0;
 }
 
 /*/ Media Querys /*/

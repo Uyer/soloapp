@@ -42,6 +42,8 @@ gem 'rails-controller-testing'
 gem 'stripe'
 #Use Brakeman Security Scanner
 gem 'brakeman', require: false
+#Use mem dalli
+gem 'dalli'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

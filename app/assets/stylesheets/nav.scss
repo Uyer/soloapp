@@ -65,4 +65,10 @@
         }
     }
   }
-}  
+}
+
+@media screen and (max-width: 420px), screen and (max-device-width: 420px) {
+  .navbar .search_bar {
+    padding-top: 10px;
+  }
+}
