@@ -44,6 +44,8 @@ gem 'stripe'
 gem 'brakeman', require: false
 #Use mem dalli
 gem 'dalli'
+#Use New Relic
+gem 'newrelic_rpm'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
