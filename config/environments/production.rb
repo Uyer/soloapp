@@ -55,7 +55,7 @@ Rails.application.configure do
   config.log_tags = [ :request_id ]
 
   # Use a different cache store in production.
-  # config.cache_store = :mem_cache_store
+  #Use Memcache Dalli as cache_store
   config.cache_store = :dalli_store,
   (ENV["MEMCACHIER_SERVERS"] || "").split(","),
   {:username => ENV["MEMCACHIER_USERNAME"],
@@ -109,5 +109,8 @@ Rails.application.configure do
     domain: 'heroku.com',
     enable_starttls_auto: true
   }
+  #Allow ActionCable Requests
+  config.web_socket_server_url = "wss://bbikes.herokuapp.com/cable"
+  config.action_cable.allowed_request_origins = ['https://bbikes.herokuapp.com', 'http://bbikes.herokuapp.com']
 
 end
