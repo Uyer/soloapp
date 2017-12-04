@@ -1,20 +1,20 @@
 <%= link_to 'Back', products_path %>
 
-<div class = "container-fluid">
-  <div class = "row" data-product-id="<%= @product.id %>">
-    <div class = "prod_wrapper">
-      <div class = "col-xs-12 col-sm-6 nopadding">
-        <div class = "product_img">
+<div class="container-fluid">
+  <div class="row" data-product-id="<%= @product.id %>">
+    <div class="prod_wrapper">
+      <div class="col-xs-12 col-sm-6 nopadding">
+        <div class="product_img">
           <%= image_tag(@product.image_url, class: "img-responsive img-zoom", data_zoom_image: @product.image_url) %>
         </div>  
       </div>    
-      <div class = "col-xs-12 col-sm-6 nopadding">
-        <div class = "product_info">
+      <div class="col-xs-12 col-sm-6 nopadding">
+        <div class="product_info">
             <h2><%= @product.name %></h2> 
-          <div class = "product_desc">
+          <div class="product_desc">
             <p><%= @product.description %></p>
           </div>
-          <div class = "product_color">
+          <div class="product_color">
              <p><%= @product.colour %></p>
           </div>
           <p>Average Rating: <div class="rated" id="average-rating" data-score="<%= @product.average_rating %>"></div> </p>
@@ -33,11 +33,11 @@
         </div>  
       </div>
     </div>
-    <div class = "col-xs-12 col-sm-6 nopadding">
+    <div class="col-xs-12 col-sm-6 nopadding">
     <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
     <%= render 'comments' %>   
     </div>
-    <div class = "col-xs-12 col-sm-6 nopadding">
+    <div class="col-xs-12 col-sm-6 nopadding">
     <%= render 'new_comment' %> 
     </div>
   </div>

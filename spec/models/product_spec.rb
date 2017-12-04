@@ -15,6 +15,14 @@ describe Product do
       expect(product.average_rating).to eq 3
     end
 
+    it "returns the highest rated comment" do
+      expect(product.highest_rating_comment.rating).to eq 5
+    end
+
+    it "returns the lowest rated comment" do
+      expect(product.lowest_rating_comment.rating).to eq 1
+    end
+
     it "is not valid without a name" do
       expect(Product.new(description: "Nice bike")).not_to be_valid
     end
