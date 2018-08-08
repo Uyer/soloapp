@@ -1,3 +1,3 @@
 # README
 
-New Rails app done by newbie. CF
+Ruby on Rails app. CF
